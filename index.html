@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <div id="title">Flood Map - Event of the day 2017-03-15 for the Guanipa River sub-basin in Freites Municipality, Anzoátegui, Venezuela</div>
+    <div id="title">Event of the day 2017-03-15 for the Guanipa River sub-basin in Freites Municipality, Anzoátegui, Venezuela</div>
     <div id="map"></div>
     <script>
         var map = L.map('map').setView([9.9, -63.5], 8.5); 
@@ -35,24 +35,19 @@
             attribution: '© OpenStreetMap contributors'
         }).addTo(map);
 
-<<<<<<< HEAD
 
         var terrainLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenTopoMap contributors, SRTM | © OpenStreetMap contributors',
         maxZoom: 17
     });
 
-    // Google Satellite Layer
-    var googleSatLayer = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
-            attribution: '© Google Maps',
-            maxZoom: 20
-        });
+  
 
     // Layer control
     var baseMaps = {
         "OpenStreetMap": osmLayer,
-        "Terrain Relief": terrainLayer,
-        "Satellite": googleSatLayer,
+        "Terrain Relief": terrainLayer
+        
     };
 
    
@@ -60,33 +55,17 @@
         // Overlay layers
         var drySeasonLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/f4758f6bee91ec5b80a9fc7ce8e6fbb6-621607980843c4c9b0a417ba6ad17e94/tiles/{z}/{x}/{y}', {
             attribution: 'Dry Season',
-=======
-       
-        var drySeasonLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/7c689175c36b90753a9b99107b437b0c-fe743bfdb9f216ac8c8f2fd7123e3747/tiles/{z}/{x}/{y}', {
-            attribution: 'Dry Season VV',
->>>>>>> 9c830214f7475dec9599b958b3a5146bb278d0a8
             maxZoom: 18
         });
         drySeasonLayer.addTo(map);
 
-<<<<<<< HEAD
         var floodPeriodLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/f7aba69a152ee9948994d9d57d9676f1-60883b963f1310f73dc21e76854cea92/tiles/{z}/{x}/{y}', {
             attribution: 'Flood Period',
-=======
-       
-        var floodPeriodLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/3aa1962effa98595a547e72dd5d3cb85-3a634c454ffce8d6cb7bae7e4243d147/tiles/{z}/{x}/{y}', {
-            attribution: 'Flood Period VV',
->>>>>>> 9c830214f7475dec9599b958b3a5146bb278d0a8
             maxZoom: 18
         });
         floodPeriodLayer.addTo(map);
 
-<<<<<<< HEAD
         var floodedLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/1b652affd21913b1b1dce3adbc8f353f-24cd29839a8634c26920b883144c1459/tiles/{z}/{x}/{y}', {
-=======
-      
-        var floodedLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/a230a447022330c3863af3acfa93a18b-90b0fd4c1f3e88384a25b7a033665612/tiles/{z}/{x}/{y}', {
->>>>>>> 9c830214f7475dec9599b958b3a5146bb278d0a8
             attribution: 'Flooded Area',
             maxZoom: 18
         });
