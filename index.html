@@ -53,51 +53,51 @@
    
 
         // Overlay layers
-        var drySeasonLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/f4758f6bee91ec5b80a9fc7ce8e6fbb6-621607980843c4c9b0a417ba6ad17e94/tiles/{z}/{x}/{y}', {
+        var drySeasonLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/a57850f8e5afa6d6d2784bd73818ded0-1346f4a717c62c9d5647605d82620053/tiles/{z}/{x}/{y}', {
             attribution: 'Dry Season',
             maxZoom: 18
         });
         drySeasonLayer.addTo(map);
 
-        var floodPeriodLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/f7aba69a152ee9948994d9d57d9676f1-60883b963f1310f73dc21e76854cea92/tiles/{z}/{x}/{y}', {
+        var floodPeriodLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/5b1e3cfcd8c68118f44f268e787041d5-a9c50f1ffda04a8111c72ff25723fb8d/tiles/{z}/{x}/{y}', {
             attribution: 'Flood Period',
             maxZoom: 18
         });
         floodPeriodLayer.addTo(map);
 
-        var floodedLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/1b652affd21913b1b1dce3adbc8f353f-24cd29839a8634c26920b883144c1459/tiles/{z}/{x}/{y}', {
+        var floodedLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/a7832f2116fd6dcbaf087279aaa7332d-58ad63da31e0c538a790d792dad4cf66/tiles/{z}/{x}/{y}', {
             attribution: 'Flooded Area',
             maxZoom: 18
         });
         floodedLayer.addTo(map);
 
-        var combinedFloodableZonesLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/0623ead34b538898d8a385648120ed1d-e8e7dcdf26cad2287beec7f87129b6a8/tiles/{z}/{x}/{y}', {
+        var combinedFloodableZonesLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/0623ead34b538898d8a385648120ed1d-5c095c50cecce564cd77a874efa66158/tiles/{z}/{x}/{y}', {
         attribution: 'Combined Floodable Zones',
         maxZoom: 18
          });
 
-    var croplandAffectedLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/5438f2bcfbec373092b9edefeaad70d6-485365dbb03c4fd35f43119ab2e2e321/tiles/{z}/{x}/{y}', {
+    var croplandAffectedLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/56d2494656c7911a54c2bff7ee4fa16b-177c073a4e6aa4dbc37098e043babd11/tiles/{z}/{x}/{y}', {
         attribution: 'Affected Cropland',
         maxZoom: 18
     });
 
-    var roadsLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/fe47a6f461e0b4b32f1bd218711858e8-d10b6aea4f25e6f3393a8564a1119f4d/tiles/{z}/{x}/{y}', {
+    var roadsLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/fe47a6f461e0b4b32f1bd218711858e8-c8df5482dff6181fba71167d9f2fb178/tiles/{z}/{x}/{y}', {
         attribution: 'Roads',
         maxZoom: 18
     });
 
-    var airportsLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/652d71fd656ff3719b86f31c67d7d42a-cfc96945474eb8214d271b64b4090b24/tiles/{z}/{x}/{y}', {
+    var airportsLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/652d71fd656ff3719b86f31c67d7d42a-201e61c0b222524b47dc65ea1086001b/tiles/{z}/{x}/{y}', {
         attribution: 'Airports',
         maxZoom: 18
     });
     
 
-    var fireStationsLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/41e4f973cfa870e2838fc36d82859bde-271839b24dcc88ab56bafc058be7fe30/tiles/{z}/{x}/{y}', {
+    var fireStationsLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/41e4f973cfa870e2838fc36d82859bde-289a04ba8bc58977216eec066d54da59/tiles/{z}/{x}/{y}', {
         attribution: 'Fire Stations',
         maxZoom: 18
     });
 
-    var hospitalsLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/ce55db1701fc043b551eef32b6e42f84-1841659f33b1d189dfd2a78fb5fd04cd/tiles/{z}/{x}/{y}', {
+    var hospitalsLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/ce55db1701fc043b551eef32b6e42f84-6cae79f943879dbe82a6691b27557102/tiles/{z}/{x}/{y}', {
         attribution: 'Hospitals',
         maxZoom: 18
     });
@@ -107,11 +107,11 @@
         maxZoom: 18
     });
 
-    var schoolsLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/e6a5d09eab46ef60b8cffdbe20305b75-c87f99353bf68e8be0c06d4bf896841d/tiles/{z}/{x}/{y}', {
+    var schoolsLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/2f56d3fa223c076d92aa9e6bb6309f66-42fac7568292acb5f612e04a2602f8eb/tiles/{z}/{x}/{y}', {
         attribution: 'Schools',
         maxZoom: 18
     });
-    var geometryLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/dcfe7feed1e4c984cea3c072b1690049-ee12edd333b8a830b3dc787457e7b5cc/tiles/{z}/{x}/{y}', {
+    var geometryLayer = L.tileLayer('https://earthengine.googleapis.com/v1/projects/ee-crisrpintado33/maps/e6a5d09eab46ef60b8cffdbe20305b75-72ca0513a85bfc4226cee3350ed7e93a/tiles/{z}/{x}/{y}', {
     attribution: 'Geometry Layer',
     maxZoom: 18
 }).addTo(map); // ALWAYS ON 
